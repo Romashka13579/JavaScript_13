@@ -1,0 +1,45 @@
+body {
+    margin: 0px;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(138, 140, 255);
+}
+
+.player {
+    display: grid;
+    width: 50vw;
+    height: 450px;
+    background: rgb(100, 101, 169);
+    border-radius: 30px;
+    grid-template-columns: 1fr 35vw 1fr;
+    padding-bottom: 90px;
+    box-sizing: border-box;
+}
+
+.player-overflow {
+    width: 35vw;
+    display: flex;
+    align-items: center;
+}
+
+.song-1,
+.song-2,
+.song-3,
+.song-4,
+.song-5 {
+    width: 25vw;
+    height: 25vw;
+    margin: auto;
+    background: url(../img/81QL1T0v1TL._SL1500_.jpg) center/cover;
+    border-radius: 30px;
+}
+
+.song-display{
+    display: none;
+}
