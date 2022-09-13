@@ -17,13 +17,13 @@ body {
     height: 450px;
     background: rgb(100, 101, 169);
     border-radius: 30px;
-    grid-template-columns: 1fr 30vw 1fr;
+    grid-template-columns: 1fr 22vw 1fr;
     padding-bottom: 90px;
     box-sizing: border-box;
 }
 
 .player-overflow {
-    width: 30vw;
+    width: 22vw;
     height: 28vw;
     display: flex;
     align-items: center;
@@ -50,3 +50,25 @@ body {
 .song-display{
     display: none;
 }
+
+.bnts-left,
+.bnts-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.prev,
+.next,
+.like,
+.pause{
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: url(../img/arrow-right-solid.svg) center/cover;
+}
+.prev{background: url(../img/arrow-left-solid.svg) center/cover;}
+.like{background: url(../img/heart-solid.svg) center/cover;}
+.pause{background: url(../img/pause-solid.svg) center/cover;}
+
