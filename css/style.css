@@ -24,7 +24,7 @@ body {
     display: grid;
     width: 50vw;
     height: 360px;
-    grid-template-columns: 1fr 22vw 1fr;
+    grid-template-columns: 1fr calc(22vw + 100px) 1fr;
 }
 
 .player-bottom{
@@ -35,11 +35,13 @@ body {
 }
 
 .player-overflow {
-    width: 22vw;
-    height: 360px;
-    align-items: center;
+    overflow: hidden;
+}
+
+.player-full{
+    position: absolute;
     display: flex;
-    align-items: center;
+    float: left;
 }
 
 .song-1,
@@ -50,7 +52,7 @@ body {
     position: relative;
     width: 22vw;
     height: 22vw;
-    margin: auto;
+    margin: 50px;
     background: url(../img/81QL1T0v1TL._SL1500_.jpg) center/cover;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
