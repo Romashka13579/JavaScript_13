@@ -17,13 +17,14 @@ body {
     height: 450px;
     background: rgb(100, 101, 169);
     border-radius: 30px;
-    grid-template-columns: 1fr 35vw 1fr;
+    grid-template-columns: 1fr 30vw 1fr;
     padding-bottom: 90px;
     box-sizing: border-box;
 }
 
 .player-overflow {
-    width: 35vw;
+    width: 30vw;
+    height: 28vw;
     display: flex;
     align-items: center;
 }
@@ -33,12 +34,18 @@ body {
 .song-3,
 .song-4,
 .song-5 {
-    width: 25vw;
-    height: 25vw;
+    position: relative;
+    width: 22vw;
+    height: 22vw;
     margin: auto;
     background: url(../img/81QL1T0v1TL._SL1500_.jpg) center/cover;
-    border-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
+.song-2{background: url(../img/71TJJeHoa2L._SL1200_.jpg) center/cover;}
+.song-3{background: url(../img/71a0ijTBnsL._SL1200_.jpg) center/cover;}
+.song-4{background: url(../img/ab67616d0000b27346e207de66ba06422897f769.jfif) center/cover;}
+.song-5{background: url(../img/5.jfif) center/cover;}
 
 .song-display{
     display: none;
