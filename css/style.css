@@ -12,24 +12,18 @@ body {
 }
 
 .player{
-    display: grid;
-    width: 50vw;
-    height: 450px;
-    grid-template-rows: 360px 90px;
     background: rgb(100, 101, 169);
     border-radius: 30px;
 }
 
 .player-top {
     display: grid;
-    width: 50vw;
-    height: 360px;
-    grid-template-columns: 1fr calc(22vw + 100px) 1fr;
+    width: 640px;
+    grid-template-columns: 1fr 380px 1fr;
 }
 
 .player-bottom{
     display: flex;
-    width: 50vw;
     height: 90px;
     justify-content: space-around;
 }
@@ -39,7 +33,7 @@ body {
 }
 
 .player-full{
-    position: absolute;
+    position: relative;
     display: flex;
     float: left;
 }
@@ -50,9 +44,9 @@ body {
 .song-4,
 .song-5 {
     position: relative;
-    width: 22vw;
-    height: 22vw;
-    margin: 50px;
+    width: 240px;
+    height: 240px;
+    margin: 70px;
     background: url(../img/81QL1T0v1TL._SL1500_.jpg) center/cover;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -119,7 +113,7 @@ body {
     background-size: 50px 50px;
 }
 .controls{
-    width: 45vw;
+    width: 600px;
 }
 .controls::-webkit-media-controls{
     background: none;
