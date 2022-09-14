@@ -36,6 +36,9 @@ playerFull.addEventListener('transitionend', () => {
         songs[i].style.width = "300px";
         songs[i].style.height = "300px";
         songs[i].style.margin = "40px";
+        songs[songs.length - 1].style.width = "240px";
+        songs[songs.length - 1].style.height = "240px";
+        songs[songs.length - 1].style.margin = "70px";
         playerFull.style.transform = `translateX(${-songWidth * i}px)`;
     }
     songs = document.querySelectorAll(".song");
@@ -46,6 +49,9 @@ playerFull.addEventListener('transitionend', () => {
         songs[i].style.width = "300px";
         songs[i].style.height = "300px";
         songs[i].style.margin = "40px";
+        songs[1].style.width = "240px";
+        songs[1].style.height = "240px";
+        songs[1].style.margin = "70px";
         playerFull.style.transform = `translateX(${-songWidth * i}px)`;
     }
 });
@@ -79,5 +85,6 @@ btn_prev.addEventListener('click', () => {
     playerFull.style.transform = `translateX(${-songWidth * i}px)`;
     playerFull.style.transition = ".7s";
     songs[i].style.transition = ".7s";
+    songs[i+1].style.transition = ".7s";
 });
 
