@@ -38,38 +38,37 @@ body {
     float: left;
 }
 
-.song-1,
-.song-2,
-.song-3,
-.song-4,
-.song-5 {
+#song-1,
+#song-2,
+#song-3,
+#song-4,
+#song-5{
     position: relative;
     width: 240px;
     height: 240px;
     margin: 70px;
-    background: url(../img/81QL1T0v1TL._SL1500_.jpg) center/cover;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
 
-.song-2 {
+#song-1{
+    background: url(../img/81QL1T0v1TL._SL1500_.jpg) center/cover;
+}
+
+#song-2 {
     background: url(../img/71TJJeHoa2L._SL1200_.jpg) center/cover;
 }
 
-.song-3 {
+#song-3 {
     background: url(../img/71a0ijTBnsL._SL1200_.jpg) center/cover;
 }
 
-.song-4 {
+#song-4 {
     background: url(../img/ab67616d0000b27346e207de66ba06422897f769.jfif) center/cover;
 }
 
-.song-5 {
+#song-5 {
     background: url(../img/5.jfif) center/cover;
-}
-
-.song-display {
-    display: none;
 }
 
 .bnts-left,
