@@ -40,7 +40,7 @@ playerFull.addEventListener('transitionend', () => {
         SizeChange(songs[i], songs[songs.length - 1]);
         playerFull.style.left = "" + -songWidth * i + "px";
         c = 0;
-        ControlsChange(controls[0], controls[c]);
+        ControlsChange(controls[controls.length - 1], controls[c]);
     }
     songs = document.querySelectorAll(".song");
     if (songs[i].id === lastClone.id) {
@@ -58,7 +58,7 @@ btn_next.addEventListener('click', () => {
     songs = document.querySelectorAll(".song");
     if (i >= songs.length - 1) { return; }
     if (timer == true) {
-        if (c <= controls.length - 1) {
+        if (c < controls.length - 1) {
             ControlsChange(controls[c], controls[c + 1]);
             c++;
         }
