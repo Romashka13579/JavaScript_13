@@ -36,8 +36,6 @@ body {
     position: relative;
     display: flex;
     float: left;
-    /* background: linear-gradient(83deg, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 100%); */
-    border: 10px solid bisque;
 }
 
 .song-1,
